@@ -1,0 +1,8 @@
+dataset,error
+wind_correlations,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\metafeatures_2.py"", line 207, in process_dataset
+    X, y = prepare_data(X, y)
+  File ""V:\prog\projeto metaaprendizado\metafeatures_2.py"", line 53, in prepare_data
+    raise ValueError(""Target y is None"")
+ValueError: Target y is None
+"
