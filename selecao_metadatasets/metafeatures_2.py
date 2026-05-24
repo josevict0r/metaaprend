@@ -1,3 +1,14 @@
+'''filtered_df = df[
+    (df["NumberOfClasses"] > 1) &
+    (df["NumberOfInstances"] < 2000) &
+    (df["NumberOfFeatures"] >= 5) &
+    (df["NumberOfFeatures"] <= 70) &
+    (df["NumberOfInstancesWithMissingValues"] == 0) &
+    (df["NumberOfNumericFeatures"] == (df["NumberOfFeatures"] - 1)) &
+    (df["MinorityClassSize"] > 10) &
+    (df["format"] != "Sparse_ARFF")
+]'''
+
 import time
 import traceback
 import warnings
