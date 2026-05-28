@@ -7,7 +7,18 @@
     (df["NumberOfNumericFeatures"] == (df["NumberOfFeatures"] - 1)) &
     (df["MinorityClassSize"] > 10) &
     (df["format"] != "Sparse_ARFF")
-]'''
+]
+
+filtered_df = df[
+    (df["NumberOfClasses"] > 1) &
+    (df["NumberOfInstances"] < 2000) &
+    (df["NumberOfFeatures"] >= 5) &
+    (df["NumberOfFeatures"] <= 120) &
+    (df["MinorityClassSize"] > 10) &
+    (df["format"] != "Sparse_ARFF")
+]
+
+'''
 
 import time
 import traceback
@@ -34,7 +45,7 @@ warnings.filterwarnings("ignore")
 # CONFIG
 # =========================================================
 
-DATASET_CSV = "datasets_filtered_cleaned.csv"
+DATASET_CSV = "datasets_filtered.csv"
 
 OUTPUT_METAFEATURES = "meta_features.csv"
 FAILED_DATASETS_LOG = "failed_datasets.csv"
@@ -51,6 +62,20 @@ BAD_DATASETS = {
     "jEdit_4.2_4.3",
     "jEdit_4.0_4.2"
 }
+
+processed_datasets = set()
+
+if os.path.exists(OUTPUT_METAFEATURES):
+
+    existing_df = pd.read_csv(OUTPUT_METAFEATURES)
+
+    if "dataset" in existing_df.columns:
+
+        processed_datasets = set(
+            existing_df["dataset"].astype(str)
+        )
+
+print(f"Already processed: {len(processed_datasets)}")
 
 
 # =========================================================
@@ -301,16 +326,26 @@ if __name__ == "__main__":
 
     dataset_df = pd.read_csv(DATASET_CSV)
 
-    dataset_names = (
+    '''dataset_names = (
         dataset_df.iloc[:, 0]
         .dropna()
         .astype(str)
         .tolist()
-    )
+    )'''
 
+    dataset_names = dataset_df["name"].tolist()
+
+# skip already processed datasets
+    dataset_names = [
+        d for d in dataset_names
+        if d not in processed_datasets
+    ]
+
+    
     print(f"Found {len(dataset_names)} datasets")
     print(f"Using {MAX_WORKERS} workers")
-
+    print(f"Remaining datasets: {len(dataset_names)}")
+    
     all_results = []
     failed_datasets = []
     all_failed_features = []

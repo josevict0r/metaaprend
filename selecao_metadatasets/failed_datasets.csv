@@ -1,8 +1,228 @@
 dataset,error
+analcatdata_reviewer,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'Roger_Ebert' has 141 missing values. Missing values are not supported for target columns.
+"
 wind_correlations,"Traceback (most recent call last):
-  File ""V:\prog\projeto metaaprendizado\metafeatures_2.py"", line 207, in process_dataset
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 243, in process_dataset
     X, y = prepare_data(X, y)
-  File ""V:\prog\projeto metaaprendizado\metafeatures_2.py"", line 53, in prepare_data
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 89, in prepare_data
     raise ValueError(""Target y is None"")
 ValueError: Target y is None
+"
+kdd_el_nino-small,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 's_s_temp' has 73 missing values. Missing values are not supported for target columns.
+"
+autoHorse,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'class' has 2 missing values. Missing values are not supported for target columns.
+"
+hip,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 243, in process_dataset
+    X, y = prepare_data(X, y)
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 89, in prepare_data
+    raise ValueError(""Target y is None"")
+ValueError: Target y is None
+"
+colleges_usnews,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'Graduation_rate' has 98 missing values. Missing values are not supported for target columns.
+"
+chscase_whale,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'col_12' has 5 missing values. Missing values are not supported for target columns.
+"
+water-treatment,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'RD-SED-G' has 31 missing values. Missing values are not supported for target columns.
+"
+analcatdata_draft,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 243, in process_dataset
+    X, y = prepare_data(X, y)
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 89, in prepare_data
+    raise ValueError(""Target y is None"")
+ValueError: Target y is None
+"
+analcatdata_marketing,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'X1a' has 2 missing values. Missing values are not supported for target columns.
+"
+car,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1124, in fetch_openml
+    data_qualities = _get_data_qualities(data_id, data_home)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 404, in _get_data_qualities
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
+    raise OpenMLError(error_message)
+sklearn.datasets._openml.OpenMLError: Dataset with data_id 21 not found.
+"
+bridges,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'TYPE' has 2 missing values. Missing values are not supported for target columns.
+"
+jEdit_4.2_4.3,Known bad dataset
+jEdit_4.0_4.2,Known bad dataset
+CostaMadre1,Known bad dataset
+emotions,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
+    raise OpenMLError(error_message)
+sklearn.datasets._openml.OpenMLError: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 344, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
+    raise OpenMLError(error_message)
+sklearn.datasets._openml.OpenMLError: Dataset emotions with version 1 not found.
+"
+cleveland-nominal,[Errno 22] Invalid argument: 'failed_datasets.csv'
+Australian,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1077, in fetch_openml
+    raise ValueError(
+ValueError: Sparse ARFF datasets cannot be loaded with as_frame=True. Use as_frame=False or as_frame='auto' instead.
+"
+iriiiiiis,Known bad dataset
+Mammographic-Mass-Data-Set,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 243, in process_dataset
+    X, y = prepare_data(X, y)
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 89, in prepare_data
+    raise ValueError(""Target y is None"")
+ValueError: Target y is None
+"
+doa_bwin,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
+    raise OpenMLError(error_message)
+sklearn.datasets._openml.OpenMLError: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 344, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
+    raise OpenMLError(error_message)
+sklearn.datasets._openml.OpenMLError: Dataset doa_bwin with version 1 not found.
+"
+StudentsPerformance,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
+    raise OpenMLError(error_message)
+sklearn.datasets._openml.OpenMLError: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 344, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
+    raise OpenMLError(error_message)
+sklearn.datasets._openml.OpenMLError: Dataset studentsperformance with version 1 not found.
+"
+mental-health-in-tech-survey,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 243, in process_dataset
+    X, y = prepare_data(X, y)
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 89, in prepare_data
+    raise ValueError(""Target y is None"")
+ValueError: Target y is None
+"
+regensburg_pediatric_appendicitis,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'Management' has 1 missing values. Missing values are not supported for target columns.
 "
