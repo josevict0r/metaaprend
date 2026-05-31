@@ -1,0 +1,2277 @@
+dataset,error
+analcatdata_reviewer,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'Roger_Ebert' has 141 missing values. Missing values are not supported for target columns.
+"
+veteran,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 806, in _make_test_folds
+    raise ValueError(
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+"
+pwLinear,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+baskball,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+pharynx,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 806, in _make_test_folds
+    raise ValueError(
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+"
+auto_price,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 806, in _make_test_folds
+    raise ValueError(
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+"
+pm10,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+sleuth_ex1605,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 806, in _make_test_folds
+    raise ValueError(
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+"
+autoPrice,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 806, in _make_test_folds
+    raise ValueError(
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+"
+meta,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+analcatdata_election2000,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 806, in _make_test_folds
+    raise ValueError(
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+"
+analcatdata_olympic2000,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 806, in _make_test_folds
+    raise ValueError(
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+"
+sleuth_ex1714,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 806, in _make_test_folds
+    raise ValueError(
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+"
+bodyfat,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+rabe_265,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+wind_correlations,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 172, in process_dataset
+    raise ValueError(""Dataset has no target"")
+ValueError: Dataset has no target
+"
+witmer_census_1980,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+triazines,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+pyrim,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+hutsof99_logis,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+pbc,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 806, in _make_test_folds
+    raise ValueError(
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+"
+chscase_vine1,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+diggle_table_a1,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+chatfield_4,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+boston_corrected,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+sensory,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+autoMpg,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+analcatdata_vehicle,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 806, in _make_test_folds
+    raise ValueError(
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+"
+sleuth_case1102,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 806, in _make_test_folds
+    raise ValueError(
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+"
+kdd_el_nino-small,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 's_s_temp' has 73 missing values. Missing values are not supported for target columns.
+"
+autoHorse,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'class' has 2 missing values. Missing values are not supported for target columns.
+"
+stock,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+boston,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+fishcatch,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+bolts,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+analcatdata_gviolence,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 806, in _make_test_folds
+    raise ValueError(
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+"
+auto93,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+pollution,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+no2,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+cloud,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+sleuth_case1202,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+sleuth_case1201,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+visualizing_hamster,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+hip,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 172, in process_dataset
+    raise ValueError(""Dataset has no target"")
+ValueError: Dataset has no target
+"
+chscase_census6,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+chscase_census5,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+chscase_census4,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+chscase_census3,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+chscase_census2,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+plasma_retinol,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 806, in _make_test_folds
+    raise ValueError(
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+"
+hutsof99_child_witness,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+colleges_usnews,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'Graduation_rate' has 98 missing values. Missing values are not supported for target columns.
+"
+socmob,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+sleuth_ex1221,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+chscase_whale,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'col_12' has 5 missing values. Missing values are not supported for target columns.
+"
+water-treatment,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'RD-SED-G' has 31 missing values. Missing values are not supported for target columns.
+"
+lowbwt,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 806, in _make_test_folds
+    raise ValueError(
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+"
+echoMonths,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+kidney,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 206, in process_dataset
+    scores = cross_val_score(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in cross_validate
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1986, in __call__
+    return output if self.return_generator else list(output)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\parallel.py"", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\parallel.py"", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py"", line 399, in <genexpr>
+    results = parallel(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 411, in split
+    for train, test in super().split(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 844, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_split.py"", line 787, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+"
+analcatdata_draft,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 172, in process_dataset
+    raise ValueError(""Dataset has no target"")
+ValueError: Dataset has no target
+"
+analcatdata_marketing,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'X1a' has 2 missing values. Missing values are not supported for target columns.
+"
+collins,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 78, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
+"
+bridges,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'TYPE' has 2 missing values. Missing values are not supported for target columns.
+"
+jEdit_4.2_4.3,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 550, in _load_arff_response
+    X, y, frame, categories = _open_url_and_load_gzip_file(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 538, in _open_url_and_load_gzip_file
+    return load_arff_from_gzip_file(gzip_file, **arff_params)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_arff_parser.py"", line 532, in load_arff_from_gzip_file
+    return _pandas_arff_parser(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_arff_parser.py"", line 403, in _pandas_arff_parser
+    frame = pd.read_csv(gzip_file, **read_csv_kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py"", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File ""pandas/_libs/parsers.pyx"", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 685, in _download_data_to_bunch
+    X, y, frame, categories = _retry_with_clean_cache(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 78, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 550, in _load_arff_response
+    X, y, frame, categories = _open_url_and_load_gzip_file(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 538, in _open_url_and_load_gzip_file
+    return load_arff_from_gzip_file(gzip_file, **arff_params)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_arff_parser.py"", line 532, in load_arff_from_gzip_file
+    return _pandas_arff_parser(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_arff_parser.py"", line 403, in _pandas_arff_parser
+    frame = pd.read_csv(gzip_file, **read_csv_kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py"", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File ""pandas/_libs/parsers.pyx"", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+"
+jEdit_4.0_4.2,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 550, in _load_arff_response
+    X, y, frame, categories = _open_url_and_load_gzip_file(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 538, in _open_url_and_load_gzip_file
+    return load_arff_from_gzip_file(gzip_file, **arff_params)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_arff_parser.py"", line 532, in load_arff_from_gzip_file
+    return _pandas_arff_parser(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_arff_parser.py"", line 403, in _pandas_arff_parser
+    frame = pd.read_csv(gzip_file, **read_csv_kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py"", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File ""pandas/_libs/parsers.pyx"", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 685, in _download_data_to_bunch
+    X, y, frame, categories = _retry_with_clean_cache(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 78, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 550, in _load_arff_response
+    X, y, frame, categories = _open_url_and_load_gzip_file(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 538, in _open_url_and_load_gzip_file
+    return load_arff_from_gzip_file(gzip_file, **arff_params)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_arff_parser.py"", line 532, in load_arff_from_gzip_file
+    return _pandas_arff_parser(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_arff_parser.py"", line 403, in _pandas_arff_parser
+    frame = pd.read_csv(gzip_file, **read_csv_kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py"", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py"", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File ""pandas/_libs/parsers.pyx"", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+"
+CostaMadre1,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
+    raise OpenMLError(error_message)
+sklearn.datasets._openml.OpenMLError: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 344, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
+    raise OpenMLError(error_message)
+sklearn.datasets._openml.OpenMLError: Dataset costamadre1 with version 1 not found.
+"
+cylinder-bands,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 78, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
+"
+emotions,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
+    raise OpenMLError(error_message)
+sklearn.datasets._openml.OpenMLError: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 344, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
+    raise OpenMLError(error_message)
+sklearn.datasets._openml.OpenMLError: Dataset emotions with version 1 not found.
+"
+Australian,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 78, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
+"
+iriiiiiis,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
+    raise OpenMLError(error_message)
+sklearn.datasets._openml.OpenMLError: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 344, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
+    raise OpenMLError(error_message)
+sklearn.datasets._openml.OpenMLError: Dataset iriiiiiis with version 1 not found.
+"
+Mammographic-Mass-Data-Set,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 172, in process_dataset
+    raise ValueError(""Dataset has no target"")
+ValueError: Dataset has no target
+"
+doa_bwin,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
+    raise OpenMLError(error_message)
+sklearn.datasets._openml.OpenMLError: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 344, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 78, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
+"
+StudentsPerformance,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 78, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
+"
+mental-health-in-tech-survey,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 172, in process_dataset
+    raise ValueError(""Dataset has no target"")
+ValueError: Dataset has no target
+"
+regensburg_pediatric_appendicitis,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\avaliacao_base\avaliacao_bases.py"", line 162, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
+    bunch = _download_data_to_bunch(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
+    raise ValueError(
+ValueError: Target column 'Management' has 1 missing values. Missing values are not supported for target columns.
+"

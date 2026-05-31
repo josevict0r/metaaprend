@@ -17,6 +17,51 @@ wind_correlations,"Traceback (most recent call last):
     raise ValueError(""Target y is None"")
 ValueError: Target y is None
 "
+vowel,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 252, in _get_json_content_from_openml_api
+    raise error
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 563, in error
+    return self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
+"
 kdd_el_nino-small,"Traceback (most recent call last):
   File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
     dataset = fetch_openml(
@@ -39,6 +84,7 @@ autoHorse,"Traceback (most recent call last):
     raise ValueError(
 ValueError: Target column 'class' has 2 missing values. Missing values are not supported for target columns.
 "
+auto_price,"Unable to allocate 10.0 MiB for an array with shape (1489, 55) and data type <U32"
 hip,"Traceback (most recent call last):
   File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 243, in process_dataset
     X, y = prepare_data(X, y)
@@ -97,39 +143,89 @@ analcatdata_marketing,"Traceback (most recent call last):
     raise ValueError(
 ValueError: Target column 'X1a' has 2 missing values. Missing values are not supported for target columns.
 "
-car,"Traceback (most recent call last):
+collins,"Traceback (most recent call last):
   File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
     dataset = fetch_openml(
   File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
     return func(*args, **kwargs)
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1124, in fetch_openml
-    data_qualities = _get_data_qualities(data_id, data_home)
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 404, in _get_data_qualities
-    json_data = _get_json_content_from_openml_api(
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
-    raise OpenMLError(error_message)
-sklearn.datasets._openml.OpenMLError: Dataset with data_id 21 not found.
-"
-bridges,"Traceback (most recent call last):
-  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
-    dataset = fetch_openml(
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
-    return func(*args, **kwargs)
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1131, in fetch_openml
-    bunch = _download_data_to_bunch(
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 672, in _download_data_to_bunch
-    raise ValueError(
-ValueError: Target column 'TYPE' has 2 missing values. Missing values are not supported for target columns.
-"
-jEdit_4.2_4.3,Known bad dataset
-jEdit_4.0_4.2,Known bad dataset
-CostaMadre1,Known bad dataset
-emotions,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
   File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
     json_data = _get_json_content_from_openml_api(
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
-    raise OpenMLError(error_message)
-sklearn.datasets._openml.OpenMLError: None
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 252, in _get_json_content_from_openml_api
+    raise error
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 563, in error
+    return self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
+"
+car,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
 
 During handling of the above exception, another exception occurred:
 
@@ -140,21 +236,298 @@ Traceback (most recent call last):
     return func(*args, **kwargs)
   File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
     data_info = _get_data_info_by_name(
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 344, in _get_data_info_by_name
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
     json_data = _get_json_content_from_openml_api(
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
-    raise OpenMLError(error_message)
-sklearn.datasets._openml.OpenMLError: Dataset emotions with version 1 not found.
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 252, in _get_json_content_from_openml_api
+    raise error
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 78, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 563, in error
+    return self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
 "
-cleveland-nominal,[Errno 22] Invalid argument: 'failed_datasets.csv'
-Australian,"Traceback (most recent call last):
+bridges,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
   File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
     dataset = fetch_openml(
   File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
     return func(*args, **kwargs)
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1077, in fetch_openml
-    raise ValueError(
-ValueError: Sparse ARFF datasets cannot be loaded with as_frame=True. Use as_frame=False or as_frame='auto' instead.
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 252, in _get_json_content_from_openml_api
+    raise error
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 78, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 563, in error
+    return self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
+"
+jEdit_4.2_4.3,Known bad dataset
+jEdit_4.0_4.2,Known bad dataset
+CostaMadre1,Known bad dataset
+cylinder-bands,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 252, in _get_json_content_from_openml_api
+    raise error
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 563, in error
+    return self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
+"
+dresses-sales,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 252, in _get_json_content_from_openml_api
+    raise error
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 563, in error
+    return self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
+"
+emotions,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 252, in _get_json_content_from_openml_api
+    raise error
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 78, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 563, in error
+    return self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
 "
 iriiiiiis,Known bad dataset
 Mammographic-Mass-Data-Set,"Traceback (most recent call last):
@@ -164,34 +537,169 @@ Mammographic-Mass-Data-Set,"Traceback (most recent call last):
     raise ValueError(""Target y is None"")
 ValueError: Target y is None
 "
-doa_bwin,"Traceback (most recent call last):
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
-    json_data = _get_json_content_from_openml_api(
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
-    raise OpenMLError(error_message)
-sklearn.datasets._openml.OpenMLError: None
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
+Australian,"Traceback (most recent call last):
   File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
     dataset = fetch_openml(
   File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
     return func(*args, **kwargs)
   File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
     data_info = _get_data_info_by_name(
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 344, in _get_data_info_by_name
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
     json_data = _get_json_content_from_openml_api(
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
-    raise OpenMLError(error_message)
-sklearn.datasets._openml.OpenMLError: Dataset doa_bwin with version 1 not found.
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 252, in _get_json_content_from_openml_api
+    raise error
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 563, in error
+    return self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
+"
+doa_bwin,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 252, in _get_json_content_from_openml_api
+    raise error
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 563, in error
+    return self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
 "
 StudentsPerformance,"Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
   File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
     json_data = _get_json_content_from_openml_api(
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
-    raise OpenMLError(error_message)
-sklearn.datasets._openml.OpenMLError: None
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 252, in _get_json_content_from_openml_api
+    raise error
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 563, in error
+    return self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
+"
+solar-flare,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
 
 During handling of the above exception, another exception occurred:
 
@@ -202,11 +710,43 @@ Traceback (most recent call last):
     return func(*args, **kwargs)
   File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
     data_info = _get_data_info_by_name(
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 344, in _get_data_info_by_name
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
     json_data = _get_json_content_from_openml_api(
-  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 255, in _get_json_content_from_openml_api
-    raise OpenMLError(error_message)
-sklearn.datasets._openml.OpenMLError: Dataset studentsperformance with version 1 not found.
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 252, in _get_json_content_from_openml_api
+    raise error
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 78, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 563, in error
+    return self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
 "
 mental-health-in-tech-survey,"Traceback (most recent call last):
   File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 243, in process_dataset
@@ -214,6 +754,82 @@ mental-health-in-tech-survey,"Traceback (most recent call last):
   File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 89, in prepare_data
     raise ValueError(""Target y is None"")
 ValueError: Target y is None
+"
+MiceProtein,"Traceback (most recent call last):
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 66, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 519, in open
+    response = self._open(req, data)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 1352, in do_open
+    r = h.getresponse()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 1368, in getresponse
+    response.begin()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 317, in begin
+    version, status, reason = self._read_status()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\http\client.py"", line 286, in _read_status
+    raise RemoteDisconnected(""Remote end closed connection without""
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
+    dataset = fetch_openml(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\_param_validation.py"", line 218, in wrapper
+    return func(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 1012, in fetch_openml
+    data_info = _get_data_info_by_name(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 330, in _get_data_info_by_name
+    json_data = _get_json_content_from_openml_api(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 252, in _get_json_content_from_openml_api
+    raise error
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 247, in _get_json_content_from_openml_api
+    return _load_json()
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 78, in wrapper
+    return f(*args, **kw)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 242, in _load_json
+    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 174, in _open_openml_url
+    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\datasets\_openml.py"", line 102, in wrapper
+    return f(*args, **kwargs)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 557, in error
+    result = self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 525, in open
+    response = meth(req, response)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 634, in http_response
+    response = self.parent.error(
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 563, in error
+    return self._call_chain(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 496, in _call_chain
+    result = func(*args)
+  File ""C:\Users\jose victor\AppData\Local\Programs\Python\Python310\lib\urllib\request.py"", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
 "
 regensburg_pediatric_appendicitis,"Traceback (most recent call last):
   File ""V:\prog\projeto metaaprendizado\selecao_metadatasets\metafeatures_2.py"", line 234, in process_dataset
