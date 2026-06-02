@@ -46,9 +46,12 @@ def evaluate_feature_subset(feature_subset):
         cv=cv,
         n_jobs=-1
     )
-    #f1 = f1_score(y, y_pred, average='weighted')
-    #fitness = f1 - 0.01 * (len(feature_subset) / len(meta_feature_cols))
-    return f1_score(y, y_pred, average='weighted')
+    
+    f1 = f1_score(y, y_pred, average='weighted')
+
+    fitness = f1 - 0.01 * (len(feature_subset) / len(meta_feature_cols))
+
+    return fitness
 
 def random_individual():
     ind = np.random.choice([0, 1], size=len(meta_feature_cols), p=[0.9, 0.1]) #####
@@ -88,10 +91,10 @@ def mutate(individual, mutation_prob=0.05):
 
 np.random.seed(42)
 
-pop_size = 140
+pop_size = 300
 n_generations = 30
-crossover_prob = 0.8
-mutation_prob = 0.05
+crossover_prob = 0.9
+mutation_prob = 0.1
 elitism = 2
 
 population = [random_individual() for _ in range(pop_size)]
