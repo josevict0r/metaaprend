@@ -159,12 +159,12 @@ print(f'Quantidade de Meta-features selecionadas: {len(selected_meta_features_br
 print('='*50)
 
 history_brkga_df = pd.DataFrame(history_brkga)
-
+history_brkga_df.to_json('history_brkga.json')
 # EXPERIMENTO: Avaliação de Impacto do BRKGA no Meta-Modelo Final
 print("\nExecutando o Experimento e Avaliação com subconjunto BRKGA via LOO...")
 
 # Filtrando o meta_dataset para conter apenas as características selecionadas pelo BRKGA
-brkga_dataset_filter = meta_dataset[['Dataset'] + selected_meta_features_brkga + classifier_cols + ['Best']]
+brkga_dataset_filter = meta_dataset[['dataset'] + selected_meta_features_brkga + classifier_cols + ['Best']]
 
 # Rodando a validação Leave-One-Out estruturada no Passo 5
 summary_df_brkga, meta_model_accuracy_brkga, meta_model_f1_brkga, feature_importances_brkga = train_and_evaluate_meta_model(brkga_dataset_filter)
