@@ -117,7 +117,12 @@ for generation in range(n_generations):
         'generation': generation,
         'best_f1': best_score,
         'mean_f1': mean_score,
-        'features_count': num_selected
+        'features_count': num_selected,
+        'pop_size': pop_size,    
+        'n_generations':n_generations,
+        'elite_proportion': pe,           
+        'mutant_proportion': pm,    
+        'elite_gene_probability': rhoe,
     })
 
     print(f'Geração {generation:02d}: Melhor F1 = {best_score:.4f} | Média F1 = {mean_score:.4f} | Features Ativas = {num_selected}')
