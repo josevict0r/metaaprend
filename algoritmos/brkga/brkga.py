@@ -19,7 +19,7 @@ classifier_cols = [c for c in meta_dataset.columns if c in ['DecisionTree', 'SVM
 meta_feature_cols = [c for c in meta_dataset.columns if c not in ['dataset', 'Best'] + classifier_cols]
 
 # Parâmetros
-pop_size = 50       # População expandida para o ecossistema do BRKGA
+pop_size = 300       # População expandida para o ecossistema do BRKGA
 n_generations = 30
 pe = 0.20           # Proporção da população de elite (20%)
 pm = 0.15           # Proporção de mutantes introduzidos a cada geração (15%)

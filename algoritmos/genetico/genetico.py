@@ -117,7 +117,12 @@ for generation in range(n_generations):
         'best_f1': best_score,
         'mean_f1': mean_score,
         'features_count': int(best_individual.sum()),
-        'Best individual': decode_individual(best_individual)
+        'Best individual': decode_individual(best_individual),
+        'pop_size' : pop_size,
+        'n_generations': n_generations,
+        'crossover_prob': crossover_prob,
+        'mutation_prob': mutation_prob,
+        'elitism': elitism
     })
     print(f'Generation {generation}: best F1 = {best_score:.4f}, mean F1 = {mean_score:.4f}, features = {int(best_individual.sum())}')
 
