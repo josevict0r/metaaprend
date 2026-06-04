@@ -12,4 +12,4 @@ meta_dataset = meta_dataset.drop(['time_seconds'], axis=1)
 
 print(pd.DataFrame(meta_dataset['Best'].value_counts()))
 
-meta_dataset.to_csv('meta_dataset_bestcol.csv')
+#meta_dataset.to_csv('meta_dataset_bestcol.csv')

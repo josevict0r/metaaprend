@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import re
+from pathlib import Path
 
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
@@ -49,7 +51,7 @@ def evaluate_feature_subset(feature_subset):
     
     f1 = f1_score(y, y_pred, average='weighted')
 
-    fitness = f1 - 0.01 * (len(feature_subset) / len(meta_feature_cols))
+    fitness = f1 - coef_penalidade * (len(feature_subset) / len(meta_feature_cols))
 
     return fitness
 
@@ -96,6 +98,7 @@ n_generations = 30
 crossover_prob = 0.9
 mutation_prob = 0.1
 elitism = 2
+coef_penalidade = 0.4
 
 population = [random_individual() for _ in range(pop_size)]
 scores = Parallel(
@@ -114,7 +117,7 @@ for generation in range(n_generations):
     mean_score = np.mean(scores)
     history.append({
         'generation': generation,
-        'best_f1': best_score,
+        'best_f1': best_score + coef_penalidade * (int(best_individual.sum()) / len(meta_feature_cols)),
         'mean_f1': mean_score,
         'features_count': int(best_individual.sum()),
         'Best individual': decode_individual(best_individual),
@@ -122,9 +125,10 @@ for generation in range(n_generations):
         'n_generations': n_generations,
         'crossover_prob': crossover_prob,
         'mutation_prob': mutation_prob,
-        'elitism': elitism
+        'elitism': elitism,
+        'coef_penalidade': coef_penalidade
     })
-    print(f'Generation {generation}: best F1 = {best_score:.4f}, mean F1 = {mean_score:.4f}, features = {int(best_individual.sum())}')
+    print(f'Generation {generation}: best F1 = {best_score + coef_penalidade * (int(best_individual.sum()) / len(meta_feature_cols)):.4f}, mean F1 = {mean_score:.4f}, features = {int(best_individual.sum())}')
 
     new_population = [ind.copy() for ind, _ in ranked[:elitism]]
 
@@ -155,8 +159,19 @@ best_meta_model_f1 = scores[best_idx]
 
 print('\nBest feature subset found:')
 print(selected_meta_features_ag)
-print(f'Best meta-model F1 = {best_meta_model_f1:.4f}')
+print(f'Best meta-model F1 = {best_meta_model_f1 + coef_penalidade * (int(best_individual.sum()) / len(meta_feature_cols)):.4f}')
 print(f'Number of selected meta-features = {len(selected_meta_features_ag)}')
 
 history_df = pd.DataFrame(history)
-history_df.to_json('history.json')
+pattern = re.compile(r"history(\d+)\.json")
+
+existing = []
+
+for file in Path(".").glob("history*.json"):
+    match = pattern.fullmatch(file.name)
+    if match:
+        existing.append(int(match.group(1)))
+
+next_id = max(existing, default=0) + 1
+
+history_df.to_json(f"history{next_id}.json")

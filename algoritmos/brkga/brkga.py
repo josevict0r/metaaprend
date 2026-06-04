@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import re
+from pathlib import Path
 
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import f1_score
@@ -115,7 +117,7 @@ for generation in range(n_generations):
 
     history_brkga.append({
         'generation': generation,
-        'best_f1': best_score,
+        'best_f1': best_score + 0.01 * (num_selected / len(meta_feature_cols)),
         'mean_f1': mean_score,
         'features_count': num_selected,
         'pop_size': pop_size,    
@@ -125,7 +127,7 @@ for generation in range(n_generations):
         'elite_gene_probability': rhoe,
     })
 
-    print(f'Geração {generation:02d}: Melhor F1 = {best_score:.4f} | Média F1 = {mean_score:.4f} | Features Ativas = {num_selected}')
+    print(f'Geração {generation:02d}: Melhor F1 = {best_score + 0.01 * (num_selected / len(meta_feature_cols)):.4f} | Média F1 = {mean_score:.4f} | Features Ativas = {num_selected}')
 
     # Separação estrita do BRKGA: Elite vs Não-Elite
     elite = population_brkga[:n_elite]
@@ -164,7 +166,18 @@ print(f'Quantidade de Meta-features selecionadas: {len(selected_meta_features_br
 print('='*50)
 
 history_brkga_df = pd.DataFrame(history_brkga)
-history_brkga_df.to_json('history_brkga.json')
+pattern = re.compile(r"history(\d+)\.json")
+
+existing = []
+
+for file in Path(".").glob("history*.json"):
+    match = pattern.fullmatch(file.name)
+    if match:
+        existing.append(int(match.group(1)))
+
+next_id = max(existing, default=0) + 1
+
+history_brkga_df.to_json(f"history{next_id}.json")
 # EXPERIMENTO: Avaliação de Impacto do BRKGA no Meta-Modelo Final
 print("\nExecutando o Experimento e Avaliação com subconjunto BRKGA via LOO...")
 
